@@ -1,0 +1,79 @@
+body{
+    color: rgb(18, 18, 55);
+    background-color: #cbe7ea;
+}
+
+* { box-sizing: border-box; }
+
+.switcher button{
+    background-color:rgb(18, 18, 55);
+    color: #cbe7ea;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* ---------- GRID MODE ---------- */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); /* columns follow the window width */
+    gap: 20px;
+}
+.grid article {
+    display: flex;              /* Flexbox inside the item */
+    flex-direction: column;     /* picture on top, text below */
+}
+.grid img {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+
+/* ---------- LIST MODE ---------- */
+.list {
+    display: grid;
+    grid-template-columns: 1fr; /* one column, so each item is a row */
+    gap: 16px;
+}
+.list article {
+    display: flex;
+    flex-direction: row;        /* picture left, text beside it */
+    align-items: center;
+    gap: 16px;
+}
+.list img {
+    width: 160px;               /* the picture keeps its own size */
+    flex-shrink: 0;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+.list article div {
+    flex: 1;                    /* the text takes the space between */
+    min-width: 0;               /* lets long titles wrap instead of pushing */
+}
+.list time {
+    margin-left: auto;          /* the date sits at the right edge of the row */
+    flex-shrink: 0;
+}
+
+/* ---------- MAGAZINE MODE ---------- */
+.magazine {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-auto-flow: dense;      /* other items fill in around the big one */
+    gap: 20px;
+}
+.magazine article {
+    display: flex;
+    flex-direction: column;
+}
+.magazine img {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+.magazine article:first-child {
+    grid-column: span 2;        /* the lead item is two columns wide */
+    grid-row: span 2;           /* and two rows tall */
+}

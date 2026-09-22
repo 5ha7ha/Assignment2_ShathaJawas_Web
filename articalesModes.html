@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apex — the Formula 1 articles</title>
+  <link rel="stylesheet" href="articalesModes.css">
+</head>
+<body>
+
+  <header>
+    <h1>Apex</h1>
+    <p>Drivers, races and the machines behind them</p>
+
+    <!-- View switcher: each button only changes the class of #articles -->
+    <div class="switcher">
+      <button type="button" data-mode="grid">Grid</button>
+      <button type="button" data-mode="list">List</button>
+      <button type="button" data-mode="magazine">Magazine</button>
+    </div>
+  </header>
+
+  <main id="articles" class="grid">
+
+    <article>
+      <img src="img/monaco.jpg" alt="Cars racing through the streets of Monaco">
+      <div>
+        <h2>Monaco: why the tightest street circuit in the world still matters</h2>
+        <p>
+          It is slow, narrow and almost impossible to overtake on, yet winning here
+          still counts for more than almost any other victory. We walk the track
+          corner by corner, from Sainte Dévote up the hill to Casino Square, and
+          look at why qualifying on Saturday is often worth more than the race
+          itself on Sunday.
+        </p>
+      </div>
+      <time datetime="2026-09-20">20 Sep 2026</time>
+    </article>
+
+    <article>
+      <img src="img/senna.jpg" alt="Ayrton Senna in his McLaren">
+      <div>
+        <h2>Senna's lap</h2>
+        <p>Monaco qualifying, 1988, and a lap he later said he barely remembered.</p>
+      </div>
+      <time datetime="2026-09-18">18 Sep 2026</time>
+    </article>
+
+    <article>
+      <img src="img/schumacher.webp" alt="Michael Schumacher celebrating in a red Ferrari">
+      <div>
+        <h2>Five in a row: the Schumacher–Ferrari years</h2>
+        <p>
+          How a struggling team in red became the most dominant force of its era,
+          and why the story is about the people in the garage as much as the man
+          in the cockpit.
+        </p>
+      </div>
+      <time datetime="2026-09-16">16 Sep 2026</time>
+    </article>
+
+    <article>
+      <img src="img/spa.jpg" alt="Cars climbing Raidillon at Spa-Francorchamps">
+      <div>
+        <h2>Eau Rouge and Raidillon</h2>
+        <p>
+          The most famous corner in racing is a compression, a climb and a blind
+          crest taken at full speed. Drivers explain what it feels like to go
+          through it flat.
+        </p>
+      </div>
+      <time datetime="2026-09-14">14 Sep 2026</time>
+    </article>
+
+    <article>
+      <img src="img/pitstop.png" alt="Mechanics changing all four tyres during a pit stop">
+      <div>
+        <h2>Two seconds, twenty people</h2>
+        <p>Inside the choreography of a modern pit stop.</p>
+      </div>
+      <time datetime="2026-09-12">12 Sep 2026</time>
+    </article>
+
+    <article>
+      <img src="img/aero.avif" alt="Front wing of a modern Formula 1 car">
+      <div>
+        <h2>Ground effect explained without the maths</h2>
+        <p>
+          The floor of the car does most of the work of pushing it into the
+          tarmac. Here is why the underside matters more than the wings, and what
+          happens when the ride height goes wrong and the car starts to bounce.
+        </p>
+      </div>
+      <time datetime="2026-09-10">10 Sep 2026</time>
+    </article>
+
+    <article>
+      <img src="img/monza.avif" alt="Grandstands and the banking at Monza">
+      <div>
+        <h2>Monza, the temple of speed</h2>
+        <p>Long straights, low downforce and the loudest crowd on the calendar.</p>
+      </div>
+      <time datetime="2026-09-08">8 Sep 2026</time>
+    </article>
+
+    <article>
+      <img src="img/hamilton.jpg" alt="Lewis Hamilton raising a trophy">
+      <div>
+        <h2>Hamilton: seven titles and a record book rewritten</h2>
+        <p>
+          From a karting kid in Stevenage to the driver with more wins than anyone
+          in the sport's history.
+        </p>
+      </div>
+      <time datetime="2026-09-06">6 Sep 2026</time>
+    </article>
+
+    <article>
+      <img src="img/tyres.jpg" alt="Stack of soft, medium and hard racing tyres">
+      <div>
+        <h2>Undercut or overcut? The tyre strategy guide</h2>
+        <p>
+          Soft, medium, hard: three compounds and one question, when to stop.
+          A short guide to the decisions that win races before anyone overtakes
+          anyone.
+        </p>
+      </div>
+      <time datetime="2026-09-04">4 Sep 2026</time>
+    </article>
+
+    <article>
+      <img src="img/suzuka.webp" alt="Aerial view of the Suzuka circuit">
+      <div>
+        <h2>Suzuka's figure of eight</h2>
+        <p>
+          The only crossover circuit on the calendar, and a favourite of the
+          drivers for its flowing esses and its unforgiving 130R.
+        </p>
+      </div>
+      <time datetime="2026-09-02">2 Sep 2026</time>
+    </article>
+
+    <article>
+      <img src="img/verstappen.avif" alt="Max Verstappen in his Red Bull">
+      <div>
+        <h2>Verstappen's four straight championships</h2>
+        <p>What a run of titles looks like from inside a dominant team.</p>
+      </div>
+      <time datetime="2026-08-30">30 Aug 2026</time>
+    </article>
+
+    <article>
+      <img src="img/karting.webp" alt="Young drivers on a karting grid">
+      <div>
+        <h2>From karting to the grid</h2>
+        <p>
+          Almost every driver on the grid started before their teens. We follow
+          the usual ladder, from karts through the junior single-seater
+          series to a Grand Prix seat, and count the cost of each step along the
+          way.
+        </p>
+      </div>
+      <time datetime="2026-08-28">28 Aug 2026</time>
+    </article>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Apex Articles</p>
+  </footer>
+
+  <!-- Only swaps the class on the container; the HTML above never changes -->
+  <script>
+    const articles = document.getElementById('articles');
+    document.querySelectorAll('[data-mode]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        articles.className = btn.dataset.mode;
+      });
+    });
+  </script>
+
+</body>
+</html>

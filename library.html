@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head >
+         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Readlight — books, readers, community</title>
+        <link href="library_stylesheet.css" rel="stylesheet">
+    </head>
+    <body>
+         <header class="navbar">
+            <a href="#home" class="logo">
+            <img src="img/icon-192.png" alt="Company Logo" width="32" height="32">
+            <span>ReadLight</span>
+            </a>
+        
+            <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="#pricing">Membership</a></li>
+            </ul>
+            </nav>
+        
+            <div class="actions">
+            <button type="button">Log in</button>
+            <button type="button">Sign up</button>
+            </div>
+        </header>
+        <main>
+           <section id="home">
+        <h1>Find your next favourite book</h1>
+        <p>
+          Readlight is a reading club and library in one place: browse thousands of titles,
+          borrow what you like, and talk about it with people who read the same pages.
+        </p>
+        <a  href="#books">Browse books</a>
+      </section>
+  
+      <section id="books">
+        <h2>Popular this month</h2>
+  
+        <ul class="cards">
+          <li>
+            <img src="covers/pride-and-prejudice.jpg" alt="Cover of Pride and Prejudice" class="covers">
+            <h3>Pride and Prejudice</h3>
+            <p>Jane Austen</p>
+            <p>A witty story of manners and misjudgement.</p>
+            <a href="#">View book</a>
+          </li>
+  
+          <li>
+            <img src="covers/crime-and-punishment.jpg" alt="Cover of Crime and Punishment" class="covers">
+            <h3>Crime and Punishment</h3>
+            <p>Fyodor Dostoevsky</p>
+            <p>
+              A poor student in St Petersburg commits a crime he believes is justified,
+              then spends the rest of the novel wrestling with guilt, fear, and the
+              possibility of redemption.
+            </p>
+            <a href="#">View book</a>
+          </li>
+  
+          <li>
+            <img src="covers/abai-zholy.jpg" alt="Cover of Abai Zholy" class="covers">
+            <h3>Abai Zholy (The Path of Abai)</h3>
+            <p>Mukhtar Auezov</p>
+            <p>
+              An epic portrait of the great Kazakh poet and thinker and of the steppe
+              society that shaped him.
+            </p>
+            <a href="#">View book</a>
+          </li>
+  
+          <li>
+            <img src="covers/the-little-prince.jpg" alt="Cover of The Little Prince" class="covers">
+            <h3>The Little Prince</h3>
+            <p>Antoine de Saint-Exupéry</p>
+            <p>
+              A pilot stranded in the desert meets a small boy from another planet. A
+              gentle tale about friendship, loss, and seeing with the heart.
+            </p>
+            <a href="#">View book</a>
+          </li>
+        </ul>
+  
+        <nav class="pagination">
+  
+          <div class="pages">
+            <ol>
+              <li><a href="#books" >&larr;</a></li>
+              <li><a href="#books">1</a></li>
+              <li><a href="#books">2</a></li>
+              <li><a href="#books" aria-current="page">3</a></li>
+              <li><a href="#books">4</a></li>
+              <li><a href="#books">5</a></li>
+              <li><a href="#books" aria-label="Next page">&rarr;</a></li>
+            </ol>
+          </div>
+  
+          <p>Showing 9–12 of 96 books</p>
+        </nav>
+      </section>
+  
+      <section id="community">
+        <h2>What our readers say</h2>
+  
+        <article class="comment">
+          <img src="avatars/aigerim.png" alt="Avatar of Aigerim S." width="58" height="58">
+          <div>
+            <header>
+              <h3>Aigerim S.</h3>
+              <time datetime="2026-09-18T14:30">18 Sep 2026, 14:30</time>
+            </header>
+            <p>
+              I joined for one book and stayed for the reading circle. Last week we
+              spent two hours on a single chapter of Abai Zholy, and I left with three
+              new books on my list and two new friends.
+            </p>
+            <footer>
+              <button type="button">Reply</button>
+              <button type="button">Like</button>
+            </footer>
+          </div>
+        </article>
+  
+        <article class="comment">
+          <img src="avatars/daniyar.png" alt="Avatar of Daniyar K." width="58" height="58">
+          <div>
+            <header>
+              <h3>Daniyar K.</h3>
+              <time datetime="2026-09-16T09:12">16 Sep 2026, 09:12</time>
+            </header>
+            <p>The recommendations here are actually good. Short, honest, no spam.</p>
+            <footer>
+              <button type="button">Reply</button>
+              <button type="button">Like</button>
+            </footer>
+          </div>
+        </article>
+      </section>
+  
+      <section id="pricing">
+        <h2>Choose your membership</h2>
+  
+        <div class="pricing">
+          <article class="plan">
+            <h3>Reader</h3>
+            <p> <span class="price">$0</span>/ month</p>
+            <ul>
+              <li>2 borrowed books a month</li>
+              <li>Access to the community</li>
+            </ul>
+            <a class="btn" href="#">Choose Reader</a>
+          </article>
+  
+            <article class="plan recommended">
+              <p>Recommended</p>
+              <h3>Bookworm</h3>
+              <p> <span class="price">$9</span>/ month</p>
+              <ul>
+                <li>Unlimited borrowing</li>
+                <li>Audiobooks included</li>
+                <li>Early access to new releases</li>
+                <li>Private reading circles</li>
+                <li>Personal reading list and notes</li>
+                <li>Offline reading on any device</li>
+              </ul>
+              <a href="#">Choose Bookworm</a>
+            </article>
+    
+            <article class="plan">
+              <h3>Library</h3>
+              <p> <span class="price">$25</span>/ month</p>
+              <ul>
+                <li>Up to 10 member accounts</li>
+                <li>Shared shelves</li>
+                <li>Priority support</li>
+              </ul>
+              <a href="#">Choose Library</a>
+            </article>
+          </div>
+        </section>
+      
+        </main>
+        <footer>
+          <p>&copy; 2026 ReadLight. Happy reading.</p>
+        </footer>
+    </body>
+</html>

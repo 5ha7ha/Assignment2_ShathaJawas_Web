@@ -1,0 +1,152 @@
+body{
+    background-color: wheat;
+    color:#8B0D2C;
+    
+}
+html { scroll-padding-top: 80px; scroll-behavior: smooth; }
+body a, button {
+    text-decoration: none;
+    background-color: #C8506D;
+    color:aliceblue;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+body a:hover, button:hover {
+    background-color: aliceblue;
+    color: #8B0D2C;
+    cursor: pointer; 
+}
+section { padding: 0 20px; }
+.logo{
+    display: flex;
+    align-items: center; 
+    gap: 8px; 
+    flex-shrink: 0;
+}
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between; /* Pushes the logo to the left and links to the right */
+    align-items: center;
+    color: #C8506D;
+    background-color: #8B0D2C;
+    padding: 10px 24px;
+   
+
+}
+.navbar a {
+    color: wheat;
+     padding: 10px;
+    background-color: #8B0D2C;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px; 
+    margin: 0; 
+    padding: 0;
+}
+.actions{
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0; 
+}
+.cards{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 0;
+    margin: 0 0 32px;
+}
+.cards li {
+    flex: 1 1 200px;
+    display: flex;
+    flex-direction: column;
+}
+.covers{
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+}
+.cards li a {
+    margin-top: auto;      /* pushes every button to the bottom line */
+    align-self: flex-start;
+}
+
+.pagination {
+     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+ .pagination::before {
+    content: "";
+    flex: 1;
+}
+
+.pages ol {
+    display: flex;
+    gap: 8px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.pagination p {
+    flex: 1;
+    text-align: right;
+    color: #C8506D;
+    font-weight: bold;
+}
+.comment{
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    background-color: #8B0D2C;
+    color:wheat;
+    border-radius: 20px;
+    padding: 20px;
+}
+.comment img{
+    flex-shrink: 0;
+}
+h2 {
+    font-size: 40px;
+}
+
+.pricing{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+.plan {
+    flex: 1 1 240px;
+    background-color: #C8506D;
+    border-radius: 20px;
+    color: aliceblue;
+    padding: 10px;
+}
+
+.price {
+    color:aliceblue;
+    font-size: 40px;
+}
+
+.recommended{
+    background-color: aliceblue;
+    color: #8B0D2C;
+}
+
+.plan a {
+    background-color: #8B0D2C;
+}
+.recommended .price {
+    color: rgb(235, 31, 48);
+}
